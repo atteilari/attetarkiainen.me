@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html
+  lang="en"
+  class="dark"
+>
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <meta
+      name="description"
+      content="I'm Atte Tarkiainen, a Helsinki based freelance front end developer who believes that great modern web design relies on inspiring, yet intuitive user experience."
+    />
+    <meta
+      name="keywords"
+      content="Atte Tarkiainen, Portfolio, Web Designer, Front End Developer, Web Developer"
+    />
+    <meta
+      name="author"
+      content="Atte Tarkiainen"
+    />
+    <meta
+      name="robots"
+      content="index, follow"
+    />
+    <meta
+      property="og:title"
+      content="Atte Tarkiainen | Portfolio"
+    />
+    <meta
+      property="og:description"
+      content="I'm Atte Tarkiainen, a Helsinki based freelance front end developer who believes that great modern web design relies on inspiring, yet intuitive user experience."
+    />
+    <meta
+      property="og:image"
+      content=""
+    />
+    <meta
+      property="og:url"
+      content="https://attetarkiainen.me"
+    />
+    <meta
+      name="twitter:card"
+      content="summary"
+    />
+    <meta
+      name="twitter:site"
+      content="@atte_tarkiainen"
+    />
+    <meta
+      name="twitter:title"
+      content="Atte Tarkiainen | Portfolio"
+    />
+    <meta
+      name="twitter:description"
+      content="I'm Atte Tarkiainen, a Helsinki based freelance front end developer who believes that great modern web design relies on inspiring, yet intuitive user experience."
+    />
+    <meta
+      name="twitter:image"
+      content=""
+    />
+    <link
+      rel="canonical"
+      href="https://attetarkiainen.me"
+    />
+    <script type="application/ld+json">
+      {
+        "@context": "http://schema.org",
+        "@type": "Person",
+        "name": "Atte Tarkiainen",
+        "url": "https://attetarkiainen.me",
+        "sameAs": [
+          "https://www.linkedin.com/in/atte-tarkiainen/",
+          "https://github.com/atteilari"
+        ],
+        "contactPoint": [
+          {
+            "@type": "ContactPoint",
+            "contactType": "email",
+            "email": "hello@attetarkiainen.me"
+          },
+          {
+            "@type": "ContactPoint",
+            "contactType": "Discord",
+            "telephone": "atteilari#0001"
+          }
+        ]
+      }
+    </script>
+    <title>Atte Tarkiainen | Portfolio</title>
+    <link
+      rel="stylesheet"
+      href="./css/main.css"
+    />
+  </head>
+  <body
+    class="dark:bg-neutral-950 bg-neutral-200 dark:text-neutral-300 text-neutral-900 uppercase"
+  >
+    <!-- WEBSITE LOADER -->
+    <div
+      id="loader"
+      class="fixed w-screen h-screen bg-neutral-950 text-neutral-300 z-50"
+    >
+      <div
+        class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 text-center"
+      >
+        <h1 class="text-3xl font-extralight transition-all">
+          <span class="loader-heading">Atte</span>
+          <span class="loader-heading">Tarkiainen</span>
+          <span class="loader-heading text-neutral-600">Portfolio</span>
+        </h1>
+        <p
+          id="loader-paragraph"
+          class="font-extralight text-sm"
+        >
+          Best viewed on larger devices.
+        </p>
+      </div>
+    </div>
+    <!-- MOBILE VERSION-->
+    <div class="block xl:hidden">
+      <div
+        class="text-xl w-2/3 text-center font-light absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2"
+      >
+        <p>
+          The mobile responsive version of this website is
+          <span class="text-neutral-500">under construction.</span>
+        </p>
+        <br />
+        <p class="text-sm">
+          For the time being, this website is only viewable on devices with a
+          viewport of <span class="text-neutral-500">1280px or wider.</span>
+        </p>
+      </div>
+    </div>
+    <!-- LAPTOP VERSION -->
+    <div class="hidden xl:block">
+      <!-- CONTAINER -->
+      <div
+        class="absolute container grid w-full h-full -translate-x-1/2 -translate-y-1/2 left-1/2 top-1/2 border-neutral-900 dark:border-neutral-300 font-light"
+      >
+        <!-- GRADIENT CANVAS -->
+        <canvas
+          id="home-canvas"
+          style="position: absolute; width: 100%; height: 100%"
+        >
+        </canvas>
+        <!-- GRID DIV A -->
+        <div
+          class="absolute h-full w-full a text-neutral-300 border-neutral-900 dark:border-neutral-300 dark:bg-neutral-900 bg-neutral-300 transition-all duration-1000 dark:bg-opacity-0 bg-opacity-0"
+        >
+          <!-- HOME SECTION -->
+          <section
+            id="home"
+            class="section"
+          >
+            <div class="absolute top-0 left-0 pl-4 pt-4">
+              <h1 class="text-4xl">
+                hi, i'm <span class="text-neutral-500">atte tarkiainen</span>
+              </h1>
+              <p class="text-sm">i create stuff for the web.</p>
+            </div>
+            <div class="absolute bottom-0 right-0 pb-4 pr-4 text-right">
+              <p class="text-sm">
+                to navigate, click the buttons on the right.
+              </p>
+              <h1 class="text-4xl">
+                welcome to my <span class="text-neutral-500">portfolio</span>
+              </h1>
+            </div>
+          </section>
+          <!-- PROJECTS SECTION -->
+          <section
+            id="projects"
+            class="section hidden"
+          >
+            <div class="absolute top-0 left-0 pl-4 pt-4">
+              <h1 class="text-4xl">
+                my <span class="text-neutral-500">projects</span>
+              </h1>
+              <p class="text-sm">stuff i have created</p>
+            </div>
+            <!-- PROJECTS SLIDER -->
+            <div
+              class="center-div absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-full overflow-x-scroll whitespace-nowrap"
+            >
+              <div class="inline-flex h-full w-2/3 justify-center items-center">
+                <div class="uppercase text-center">
+                  <a
+                    href="https://github.com/atteilari/"
+                    class="text-4xl hover:text-neutral-500 transition-all duration-500"
+                    >attetarkiainen.me
+                    <div
+                      class="inline-block link w-6 h-6 mx-auto bg-neutral-300"
+                    ></div
+                  ></a>
+                  <p class="text-sm text-neutral-500">tailwindcss animejs</p>
+                  <p class="text-xs">"personal portfolio website"</p>
+                </div>
+              </div>
+              <div class="inline-flex h-full w-2/3 justify-center items-center">
+                <div class="uppercase text-center">
+                  <a
+                    href="https://sandbox.attetarkiainen.me/"
+                    class="text-4xl hover:text-neutral-500 transition-all duration-500"
+                    >websnake
+                    <div
+                      class="inline-block link w-6 h-6 mx-auto bg-neutral-300"
+                    ></div
+                  ></a>
+                  <p class="text-sm text-neutral-500">tailwindcss threejs</p>
+                  <p class="text-xs">"2d & 3d renditions of snake"</p>
+                </div>
+              </div>
+              <div class="inline-flex h-full w-2/3 justify-center items-center">
+                <div class="uppercase text-center">
+                  <a
+                    href="https://sandbox.attetarkiainen.me/"
+                    class="text-4xl hover:text-neutral-500 transition-all duration-500"
+                    >threejs backgrounds
+                    <div
+                      class="inline-block link w-6 h-6 mx-auto bg-neutral-300"
+                    ></div
+                  ></a>
+                  <p class="text-sm text-neutral-500">threejs</p>
+                  <p class="text-xs">"threejs background render experiments"</p>
+                </div>
+              </div>
+            </div>
+            <div class="absolute bottom-0 right-0 pb-4 pr-4 text-right">
+              <p class="text-sm">scroll to the right</p>
+              <h1 class="text-4xl">
+                my <span class="text-neutral-500">projects</span>
+              </h1>
+            </div>
+          </section>
+          <!-- CONTACT SECTION -->
+          <section
+            id="contact"
+            class="section hidden"
+          >
+            <div class="absolute top-0 left-0 pl-4 pt-4">
+              <h1 class="text-4xl">
+                contact <span class="text-neutral-500">me</span>
+              </h1>
+              <p class="text-sm">find me on</p>
+            </div>
+            <div
+              class="absolute shadow-2xl left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 rounded-xl p-8"
+            >
+              <h1 class="text-center text-3xl">ATTE TARKIAINEN</h1>
+              <p class="text-center text-sm text-neutral-500">
+                front end developer
+              </p>
+              <hr class="mt-2 mb-4" />
+              <div class="text-left">
+                <div class="my-2">
+                  <div
+                    class="align-middle inline-block github w-6 h-6 bg-neutral-300"
+                  ></div>
+                  <a
+                    target="_blank"
+                    href="https://github.com/atteilari/"
+                    class="inline-block hover:text-neutral-500 transition-all duration-500"
+                  >
+                    | atteilari</a
+                  >
+                </div>
+                <div class="my-2">
+                  <div
+                    class="align-middle inline-block discord w-6 h-6 bg-neutral-300"
+                  ></div>
+                  <a
+                    target="_blank"
+                    href=""
+                    class="inline-block hover:text-neutral-500 transition-all duration-500"
+                  >
+                    | @atteilari#0001</a
+                  >
+                </div>
+                <div class="my-2">
+                  <div
+                    class="align-middle inline-block email w-6 h-6 bg-neutral-300"
+                  ></div>
+                  <a
+                    target="_blank"
+                    href="mailto:hello@attetarkiainen.me"
+                    class="inline-block hover:text-neutral-500 transition-all duration-500"
+                  >
+                    | hello@attetarkiainen.me</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="absolute bottom-0 right-0 pb-4 pr-4 text-right">
+              <p class="text-sm">reach out</p>
+              <h1 class="text-4xl">
+                contact <span class="text-neutral-500">me</span>
+              </h1>
+            </div>
+          </section>
+        </div>
+        <!-- GRID DIV B -->
+        <div
+          class="absolute h-full w-full b text-neutral-300 border-neutral-900 dark:border-neutral-300 transition-all duration-1000"
+        >
+          <!-- INFO SECTION -->
+          <section
+            id="info"
+            class="info-section absolute flex h-full w-full z-30"
+          >
+            <p class="self-start pt-4 pl-4">info</p>
+            <p class="self-end text-right w-full pr-4 pb-4">info</p>
+            <p
+              class="absolute px-4 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-xs md:text-sm"
+            >
+              I'm a Helsinki based front-end developer with a passion for
+              experimental user interfaces.<br /><br />
+              I believe that good web design truly engages the user without
+              sacrificing efficiency or usability.<br /><br />
+              my inspiration for this portfolio design comes from the golden
+              ratio & the fibonacci sequence.
+            </p>
+          </section>
+          <!-- INFO OVERLAY -->
+          <div
+            id="info-overlay"
+            class="absolute h-full w-full dark:bg-neutral-800 bg-neutral-400 z-40"
+          >
+            <button
+              id="info-button"
+              href="info"
+              class="uppercase w-full h-full flex hover:text-neutral-500 transition-all duration-500"
+            >
+              <p class="self-start pt-4 pl-4">info</p>
+              <p class="self-end text-right w-full pr-4 pb-4">info</p>
+            </button>
+          </div>
+        </div>
+        <!-- GRID DIV C -->
+        <div
+          class="absolute h-full w-full c text-neutral-300 flex justify-center border-neutral-900 dark:border-neutral-300 dark:bg-neutral-700 bg-neutral-500 transition-all duration-1000"
+        >
+          <div
+            id="projects-overlay"
+            class="absolute h-full w-full transition-all duration-500 hover:text-neutral-500"
+          >
+            <button
+              id="projects-button"
+              href="#projects"
+              class="nav-button uppercase w-full h-full flex"
+            >
+              <p class="self-start pt-4 pl-4">projects</p>
+              <p class="self-end text-right w-full pr-4 pb-4">projects</p>
+            </button>
+          </div>
+        </div>
+        <!-- GRID DIV D -->
+        <div
+          class="absolute h-full w-full d text-neutral-300 flex justify-center border-neutral-900 dark:border-neutral-300 dark:bg-neutral-600 bg-neutral-600 transition-all duration-1000"
+        >
+          <div
+            id="contact-overlay"
+            class="absolute h-full w-full transition-all duration-500 hover:text-neutral-500"
+          >
+            <button
+              id="contact-button"
+              href="#contact"
+              class="nav-button uppercase w-full h-full flex"
+            >
+              <p class="self-start pt-4 pl-4">contact</p>
+              <p class="self-end text-right w-full pr-4 pb-4">contact</p>
+            </button>
+          </div>
+        </div>
+        <!-- GRID DIV E -->
+        <div
+          class="absolute h-full w-full e text-neutral-300 flex justify-center border-neutral-900 dark:border-neutral-300 dark:bg-neutral-500 bg-neutral-700 transition-all duration-1000"
+        >
+          <div
+            id="home-overlay"
+            class="absolute h-full w-full text-xs transition-all duration-500 hover:text-neutral-600"
+          >
+            <button
+              id="home-button"
+              href="#home"
+              class="nav-button uppercase w-full h-full flex underline"
+            >
+              <p class="self-start pt-2 pl-2">home</p>
+              <p class="self-end text-right w-full pr-2 pb-2">home</p>
+            </button>
+          </div>
+        </div>
+        <!-- GRID DIV F -->
+        <div
+          class="absolute h-full w-full f text-neutral-300 flex justify-center items-center border-neutral-900 dark:border-neutral-300 dark:bg-neutral-400 bg-neutral-800 transition-all duration-1000"
+        >
+          <button
+            id="darkmode-enable"
+            class="text-xs uppercase hover:text-neutral-500 transition-all duration-500 w-full h-full"
+          >
+            dark
+          </button>
+        </div>
+        <!-- GRID DIV G -->
+        <div
+          class="absolute h-full w-full g text-neutral-300 flex justify-center items-center border-neutral-900 dark:border-neutral-300 dark:bg-neutral-300 bg-neutral-900 transition-all duration-1000"
+        >
+          <button
+            id="darkmode-disable"
+            class="dark:text-neutral-900 text-xs uppercase hover:text-neutral-400 transition-all duration-500 w-full h-full text-neutral-300"
+          >
+            light
+          </button>
+        </div>
+      </div>
+    </div>
+    <!-- SCRIPTS -->
+    <script src="./js/gradient.js"></script>
+    <script src="/node_modules/animejs/lib/anime.min.js"></script>
+    <script
+      type="module"
+      src="./js/main.js"
+    ></script>
+  </body>
+</html>
