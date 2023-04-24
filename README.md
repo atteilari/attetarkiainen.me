@@ -1,5 +1,7 @@
 # attetarkiainen.me
 Source code &amp; project files for https://attetarkiainen.me/.  
+
+
 DISCLAIMER/LICENSE:
 
 The code for attetarkiainen.me is made available on GitHub for review purposes only. The source code is protected by copyright laws and is not allowed to be used for any other projects without explicit authorization from the author, Atte Tarkiainen. Any unauthorized use or distribution of this code is strictly prohibited.
